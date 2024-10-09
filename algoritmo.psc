@@ -1,6 +1,13 @@
 Proceso Compuesto_simple
-	definir n,r ,p como real; Escribir "ingresa tu fraccion con numerador"; leer n; escribir "ingresa tu denominador"; leer r;
-	si r=0 Entonces 
-		escribir "cambia el denominador";finsi
-		p<-r/n; escribir "tu decimal es..";Escribir p;
+	Definir D, N, P Como Real;
+    Escribir "Ingresar el numerador ";
+    leer N;
+    Escribir "Ingresar el denominador ";
+    leer D;
+    P<- D/N;
+    SI D=0 Entonces
+        ESCRIBIR "El denominador debe ser mayor a 0";
+    SiNo 
+        Escribir "El decimal es ", P;
+    FinSi
 FinProceso
