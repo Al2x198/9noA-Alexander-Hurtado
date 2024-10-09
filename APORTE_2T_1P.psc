@@ -1,25 +1,20 @@
-Proceso ConvertirValoresAbsolutos
-    Definir n, i Como Entero;
-    Definir vector Como Real;
-    
-	Dimension vector(1000);
-    Escribir "¿Cuántos números desea ingresar?";
-    Leer n;
-    
-    Escribir "Por favor, ingrese ", n, " números:";
-	
-    Para i <- 1 Hasta n Con Paso 1 Hacer
-		
-        Escribir "Ingrese el número ", i, ":";
-        Leer vector[i];
-    FinPara
-	
-    Escribir "El vector con valores absolutos es:";
-	
-    Para i <- 1 Hasta n Con Paso 1 Hacer
-		
-        vector[i] <- Abs(vector[i]);
-        Escribir "Elemento ", i, ": ", vector[i];
-    FinPara
-	
+Proceso APORTE_2T_1P
+	Definir mes Como Entero;
+	Escribir "MES [1-12]:" ;
+	Leer mes;
+	Segun (mes) Hacer
+		1: escribir "Mes de Enero";
+		2: escribir "Mes de febrero";
+		3: escribir "Mes de Marzo";
+		4: escribir "Mes de Abril";
+		5: escribir "Mes de Mayo";
+		6:escribir "Mes de Junio";
+		7: escribir "Mes de Julio";
+		8: escribir "Mes de agosto";
+		9: escribir "Mes de septiembre";
+		10: escribir "Mes de octubre";
+		11: escribir "Mes de noviembre";
+		12: escribir "Mes de diciembre";
+		De Otro Modo:
+			Escribir "No es un numero del 1 al 12 por locual no es un mes";
 FinProceso
